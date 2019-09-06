@@ -16,12 +16,13 @@ int factorialDeA(int a)
                 if(a==0)
                 {
                     factorial=1;
-                }else{
-            factorial=a;
-            for(int i=1;i<a;i++)
-            {
-            factorial = factorial * i;
-            }
+                }
+                else{
+                factorial=a;
+                for(int i=1;i<a;i++)
+                {
+                    factorial = factorial * i;
+                }
             }
             return factorial;
 
