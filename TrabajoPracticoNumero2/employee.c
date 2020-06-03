@@ -29,13 +29,13 @@ int initEmployees(Employee* list, int len)
 int menu()
 {
     int option;
-    printf("Que desea hacer??\n");
     printf("1_Dar de alta a un Empleado\n");
     printf("2_Modificar un Empleado\n");
     printf("3_Dar de baja un Empleado\n");
     printf("4_Listar Empleados\n");
-    printf("5_Salir\n");
-    scanf("%d", &option);
+    printf("5_Ordenar empleados\n");
+    printf("6_Salir\n");
+    getInt(&option, "Que desea hacer\n", "Solo hay 6 opciones\n",1,6);
     return option;
 }
 /** \brief find an array lenght free and return it.
@@ -124,48 +124,44 @@ int modifyEmployee(Employee* list, int len)
 {
     char option;
     int id, index, optionToModify, reply = 0;
-    printf("Ingrese el ID de la persona a modificar\n");
-    scanf("%d", &id);
+    getInt(&id,"Ingrese el ID de la persona a modificar\n", "lo minimo es 1 y lo maximo es 1000\n", 1, 1000);
     index = findEmployeeById(list, len, id);
-    printEmployee(list[index]);
-    printf("Desea modificar Este usuario??\n");
-    fflush(stdin);
-    scanf("%c", &option);
-    if(option == 's')
+    if(list[index].isEmpty==0 && index!=-1)
         {
-            printf("Que desea modificar??\n");
-            printf("1-Nombre\n");
-            printf("2_Apellido\n");
-            printf("3_Salario\n");
-            printf("4_Sector\n");
-            scanf("%d", &optionToModify);
-            switch(optionToModify)
-            {
-                case 1:
-                    printf("Reingrese su nombre\n");
-                    fflush(stdin);
-                    gets(list[index].name);
-                break;
-                case 2:
-                    printf("Reingrese su apellido\n");
-                    fflush(stdin);
-                    gets(list[index].lastName);
-                break;
-                case 3:
-                    printf("Reingrese su salario\n");
-                    scanf("%f", &list[index].salary);
-                break;
-                case 4:
-                    printf("Reingrese su sector");
-                    scanf("%d", &list[index].sector);
-                break;
-                default:
-                    printf("Solo se permiten 4 opciones");
-                    break;
-            }
+            printEmployee(list[index]);
+            getGenre(&option,"Desea modificar Este usuario??\n", "solo se puede ingresar s o n\n", 's', 'n');
+            if(option == 's')
+                {
+                    printf("1-Nombre\n");
+                    printf("2_Apellido\n");
+                    printf("3_Salario\n");
+                    printf("4_Sector\n");
+                    getInt(&optionToModify,"Que desea modificar??\n", "Solo hay 4 opciones\n", 1,4);
+                    switch(optionToModify)
+                    {
+                        case 1:
+                            getName(list[index].name,"Reingrese su nombre\n", "Su nombre no puede contener mas de 50 caracteres\n", 1, 50);
+                        break;
+                        case 2:
+                            getName(list[index].lastName,"Reingrese su apellido\n", "Su apellido no puede contener mas de 50 caracteres\n", 1, 50);
+                        break;
+                        case 3:
+                            getFloat(&list[index].salary, "Reingrese su salario\n", "Su sueldo debe ser mayor a 18000 y menor a 1 millon\n", 1800.0, 1000000.0);
+                        break;
+                        case 4:
+                            getInt(&list[index].sector, "Reingrese su sector\n", "Solo hay 4 sectores \n", 1, 4);
+                        break;
+                        default:
+                            printf("Solo se permiten 4 opciones");
+                            break;
+                    }
+                }else
+                {
+                    reply=-1;
+                }
         }else
         {
-            reply=-1;
+            printf("No existe un empleado con ese ID \n");
         }
     return reply;
 }
@@ -218,25 +214,24 @@ int removeEmployee(Employee* list, int len, int id)
     int index=0;
     int reply=-1;
     index = findEmployeeById(list, len, id);
-    printEmployee(list[index]);
-    printf("Desea darle de baja a este usuario??\n");
-    fflush(stdin);
-    scanf("%c", &option);
-    if(option=='s')
-        {
-            if(index!=-1)
-                {
-                     list[index].isEmpty=1;
-                     reply=0;
-                }else
-                {
-                    printf("No existe un propietario con ese id\n");
-                }
-        }else
-        {
-            return reply;
-        }
+    if(list[index].isEmpty==0)
+    {
+        printEmployee(list[index]);
+        getGenre(&option,"Desea dar de baja a este usuario??\n", "solo se puede ingresar s o n\n", 's', 'n');
+        if(option=='s')
+            {
+                        list[index].isEmpty=1;
+                        reply=0;
+            }else
+            {
+                printf("No se dio de baja\n");
+            }
+    }else
+    {
+        printf("No existe un propietario con ese ID\n");
         return reply;
+    }
+    return reply;
 }
 /** \brief Sort the elements in the array of employees, the argument order indicate UP or DOWN order
 *

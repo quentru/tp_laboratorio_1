@@ -149,3 +149,37 @@
 
 1573169466 g:\tp3\win_64\parser.h
 
+1576115120 source:c:\users\usuario\tp_laboratorio_1\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1576115120 c:\users\usuario\tp_laboratorio_1\tp3\win_64\linkedlist.h
+
+1576115120 c:\users\usuario\tp_laboratorio_1\tp3\win_64\employee.h
+
+1576115120 c:\users\usuario\tp_laboratorio_1\tp3\win_64\parser.h
+
+1576115120 source:c:\users\usuario\tp_laboratorio_1\tp3\win_64\employee.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"Employee.h"
+
+1576115120 source:c:\users\usuario\tp_laboratorio_1\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1576115120 c:\users\usuario\tp_laboratorio_1\tp3\win_64\controller.h
+
+1576115187 source:c:\users\usuario\tp_laboratorio_1\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+

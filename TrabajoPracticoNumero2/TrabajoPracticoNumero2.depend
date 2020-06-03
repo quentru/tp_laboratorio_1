@@ -13,3 +13,40 @@
 	<string.h>
 	"employee.h"
 
+1576115122 source:c:\users\usuario\desktop\usb\trabajopracticonumero2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"employee.h"
+
+1576115122 c:\users\usuario\desktop\usb\trabajopracticonumero2\employee.h
+
+1576115122 source:c:\users\usuario\desktop\usb\trabajopracticonumero2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"employee.h"
+
+1591159214 source:c:\users\usuario\desktop\trabajopracticonumero2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"employee.h"
+
+1591158936 c:\users\usuario\desktop\trabajopracticonumero2\employee.h
+	"inc/input.h"
+
+1591159571 source:c:\users\usuario\desktop\trabajopracticonumero2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"employee.h"
+
+1591077043 source:c:\users\usuario\desktop\trabajopracticonumero2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1591135062 c:\users\usuario\desktop\trabajopracticonumero2\inc\input.h
+

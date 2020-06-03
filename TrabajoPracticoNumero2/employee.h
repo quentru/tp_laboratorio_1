@@ -1,3 +1,4 @@
+#include "inc/input.h"
 typedef struct
 {
     int id;
