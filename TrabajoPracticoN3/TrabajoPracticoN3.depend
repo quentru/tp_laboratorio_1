@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1591915170 source:c:\trabajopracticonumero3\trabajopracticon3\employee.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"Employee.h"
+
+1591909879 c:\trabajopracticonumero3\trabajopracticon3\employee.h
+
+1591909880 source:c:\trabajopracticonumero3\trabajopracticon3\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1591909880 c:\trabajopracticonumero3\trabajopracticon3\linkedlist.h
+
+1592004604 source:c:\trabajopracticonumero3\trabajopracticon3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1591909879 c:\trabajopracticonumero3\trabajopracticon3\controller.h
+
+1591913079 source:c:\trabajopracticonumero3\trabajopracticon3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1592004903 source:c:\trabajopracticonumero3\trabajopracticon3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1591909880 c:\trabajopracticonumero3\trabajopracticon3\parser.h
+
+1592091579 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"Controller.h"
+
+1592082973 c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\linkedlist.h
+
+1592082973 c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\employee.h
+
+1592082974 c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\parser.h
+
+1592082973 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\employee.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"Employee.h"
+
+1592082973 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1592085110 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1592084457 c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\controller.h
+	"inc/input.h"
+
+1592082974 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1592082973 c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\inc\input.h
+
+1592082973 source:c:\users\santi\tp_laboratorio_1\trabajopracticonumero3\trabajopracticon3\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
