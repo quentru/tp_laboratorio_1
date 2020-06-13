@@ -5,9 +5,10 @@
 	<string.h>
 	"employee.h"
 
-1570238258 c:\users\usuario\tp_laboratorio_1\trabajopracticonumero2\employee.h
+1591158936 c:\users\usuario\tp_laboratorio_1\trabajopracticonumero2\employee.h
+	"inc/input.h"
 
-1570238475 source:c:\users\usuario\tp_laboratorio_1\trabajopracticonumero2\employee.c
+1591159214 source:c:\users\usuario\tp_laboratorio_1\trabajopracticonumero2\employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -49,4 +50,6 @@
 	<ctype.h>
 
 1591135062 c:\users\usuario\desktop\trabajopracticonumero2\inc\input.h
+
+1591135062 c:\users\usuario\tp_laboratorio_1\trabajopracticonumero2\inc\input.h
 
